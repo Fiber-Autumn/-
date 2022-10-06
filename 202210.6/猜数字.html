@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    function getRandom(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var random = getRandom(1, 10);
+    console.log(random);
+    // while (true) {
+    //     var num = prompt('猜数字!请输入1~10之间的一个数字');
+    //     if (num > random) {
+    //         alert('猜大了');
+    //     } else if (num < random) {
+    //         alert('猜小了');
+    //     } else if (num = random) {
+    //         alert('猜对了');
+    //         break;
+    //     }
+    // }
+    var i = 3;
+    while (true) {
+        if (i == 0) {
+            alert('寄');
+            break;
+        }
+        console.log(i);
+        var num = prompt('猜数字!请输入1~10之间的一个数字,3次机会');
+        if (num > random) {
+            i--;
+            alert('猜大了,还剩' + i + '机会！');
+        } else if (num < random) {
+            i--;
+            alert('猜小了,还剩' + i + '机会！');
+        } else if (num = random) {
+            alert('猜对了');
+            break;
+        }
+    }
+</script>

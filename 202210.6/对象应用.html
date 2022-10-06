@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    console.log('字面量创建对象');
+    var obj = {
+        name: '一一一',
+        age: '18',
+        sex: '男',
+        sayHi: function() {
+            console.log('Hi~');
+        }
+    }
+    console.log(obj.name);
+    console.log(obj['age']);
+    obj.sayHi();
+
+    console.log('new Object创建对象');
+    var obj1 = new Object();
+    obj1.name = '二二二';
+    obj1.age = 18;
+    obj1.sex = '女';
+    obj1.sayHi = function() {
+        console.log('Hi~');
+    }
+    console.log(obj1.name);
+    console.log(obj1['age']);
+    obj1.sayHi();
+
+    console.log('构造函数创建对象');
+    function Star(name, age, sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.sayHi = function() {
+            console.log('Hi~');
+        }
+    }
+    var sss = new Star('三三三', 18, '男');
+    console.log(sss.name);
+    console.log(sss['age']);
+    sss.sayHi();
+
+    console.log('遍历对象');
+    for (var k in obj) {
+        console.log(k);
+        console.log(obj[k]);
+    }
+
+    console.log('封装数学对象');
+    var myMath = {
+        PI: 3.141592653,
+        max: function() {
+            var max = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        },
+        min: function() {
+            var min = arguments[0];
+            for (var i = 1; i > arguments.length; i++) {
+                if (arguments[i] < min) {
+                    min = arguments[i];
+                }
+            }
+            return min;
+        },
+    }
+    console.log(myMath.PI);
+    console.log(myMath.max(1, 3, 5, 7, 9));
+    console.log(myMath.min(2, 4, 6, 8, 0));
+</script>
