@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    console.log('1.格式检测');
+    // 1.1
+    function myReverse(arr) {
+        // if (Array.isArray(arr)){
+        if (arr instanceof Array) {
+            var newArr = [];
+            for (var i = arr.length - 1; i >= 0; i--) {
+                newArr[newArr.length] = arr[i];
+            }
+            return newArr;
+        } else {
+            return '格式错误！';
+        }
+    }
+    console.log(myReverse(1, 2, 3));
+    console.log(myReverse([1, 2, 3]));
+
+    // 1.2
+    console.log(Array.isArray(1, 2, 3));
+    console.log(Array.isArray([1, 2, 3]));
+
+    console.log('2.元素增、删');
+    var arr = [1, 2, 3];
+    console.log(arr);
+
+    // 2.1。1 前增
+    // arr.unshift('qwe', 0);
+    console.log('返回新数组长度' + arr.unshift('qwe', 0));
+    console.log(arr);
+
+    // 2.1.2 后增
+    // arr.push(4, 'qwe');
+    console.log('返回新数组长度' + arr.push(4, 'rty'));
+    console.log(arr);
+
+    // 2.2.1 前删
+    console.log('返回删除元素:' + arr.shift());
+    console.log(arr);
+
+    // 2.2.2 后删
+    console.log('返回删除元素:' + arr.pop());
+    console.log(arr);
+
+    console.log('3.翻转');
+    var arr1 = ['red', 'green', 'blue'];
+    arr1.reverse();
+    console.log(arr1);
+
+    console.log('4.排序(冒泡)');
+    var arr2 = [3, 56, 74, 356, 2, 18];
+    arr2.sort(function (a, b) {
+        // return a - b;  // 升序
+        return b - a;  // 降序
+    })
+    console.log(arr2);
+
+    console.log('5.索引号查找');
+    var arr3 = ['qwe', 'rty', 'rty', 'qwe'];
+    console.log(arr3);
+    // 前 -> 后 返回第一个 没有则返回-1
+    console.log(arr3.indexOf('qwe'));
+    console.log(arr3.indexOf(1));
+    // 前 <- 后 返回第一个 没有则返回-1
+    console.log(arr3.lastIndexOf('qwe'));
+    console.log(arr3.lastIndexOf(1));
+
+    console.log('6.转字符串');
+    var arr4 = [1, 'q', 2, 'w', 3, 'e'];
+    console.log(arr4.toString());
+    // 自定义分隔符
+    console.log(arr4.join('、'));
+
+    console.log('7.元素提取');
+    var arr5 = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+    console.log(arr5.slice(2)); // 提取起始处的索引（从 0 开始），从该索引开始提取原数组元素。
+    console.log(arr5.slice(2, 4));
+    console.log(arr5.slice(1, 5)); // 如果 begin 超出原数组的索引范围，则会返回空数组。
+    // 如果该参数为负数，则表示从原数组中的倒数第几个元素开始提取
+    console.log(arr5.slice(-2)); // slice(-2) 表示提取原数组中的倒数第二个元素到最后一个元素（包含最后一个元素）。
+    console.log(arr5.slice(2, -1));
+    console.log(arr5.slice()); // 如果省略 begin，则 slice 从索引 0 开始。
+</script>
