@@ -1,0 +1,175 @@
+.main {
+    /* width: 980px; */
+    height: 465px;
+    padding-left: 220px;
+    margin-top: 10px;
+}
+
+/* Focus */
+.focus {
+    float: left;
+    width: 720px;
+    height: 455px;
+}
+
+/* NewsFlash */
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+/* News */
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+/* News-hd */
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+/* News-bd */
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Lifeservice */
+.lifeservice {
+    height: 210px;
+    border-left: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li {
+    float: left;
+    /* width: 62.25px; */
+    width: 25%;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: aquamarine;
+    margin-top: 12px;
+}
+
+.lifeservice ul li:nth-of-type(1) i {
+    background: url(../images/icons.png) no-repeat -17px -14px;
+}
+
+.lifeservice ul li:nth-of-type(2) i {
+    background: url(../images/icons.png) no-repeat -80px -16px;
+}
+
+.lifeservice ul li:nth-of-type(3) i {
+    background: url(../images/icons.png) no-repeat -141px -15px;
+}
+
+.lifeservice ul li:nth-of-type(4) i {
+    background: url(../images/icons.png) no-repeat -206px -14px;
+}
+
+.lifeservice ul li:nth-of-type(5) i {
+    background: url(../images/icons.png) no-repeat -17px -86px;
+}
+
+.lifeservice ul li:nth-of-type(6) i {
+    background: url(../images/icons.png) no-repeat -80px -85px;
+}
+
+.lifeservice ul li:nth-of-type(7) i {
+    background: url(../images/icons.png) no-repeat -143px -85px;
+}
+
+.lifeservice ul li:nth-of-type(8) i {
+    background: url(../images/icons.png) no-repeat -206px -85px;
+}
+
+.lifeservice ul li:nth-of-type(9) i {
+    background: url(../images/icons.png) no-repeat -16px -156px;
+}
+
+.lifeservice ul li:nth-of-type(10) i {
+    background: url(../images/icons.png) no-repeat -79px -157px;
+}
+
+.lifeservice ul li:nth-of-type(11) i {
+    background: url(../images/icons.png) no-repeat -142px -153px;
+}
+
+.lifeservice ul li:nth-of-type(12) i {
+    background: url(../images/icons.png) no-repeat -206px -158px;
+}
+
+/* Bargain */
+.bargain {
+    margin-top: 5px;
+}
+
+/* Recom 推荐 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    /* background-color: aqua; */
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+    width: 248.75px;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+    /* background-color: #5c5251; */
+}
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
