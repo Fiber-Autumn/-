@@ -80,7 +80,7 @@
     display: inline-block;
     width: 24px;
     height: 28px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin-top: 12px;
 }
 
@@ -172,4 +172,67 @@
 .recom_bd ul li img {
     width: 248px;
     height: 163px;
+}
+
+/* Like 猜你喜欢 */
+.like_hd {
+    margin-top: 20px;
+    height: 30px;
+}
+.like_hd p {
+    display: inline;
+    /* height: 18px; */
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 550;
+}
+.like_hd a {
+    position: relative;
+    margin-right: 20px;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.like_hd a i {
+    position: absolute;
+    display: inline-block;
+    /* margin-top: 6px; */
+    /* padding: 6px; */
+    width: 17px;
+    height: 17px;
+    background-color: aqua;
+    background: url(../images/icons.png) no-repeat -420px -108px;
+}
+.like_bd {
+    height: 266px;
+    border: 1px solid #ddd;
+}
+.like_bd ul li {
+    position: relative;
+    float: left;
+    width: 199px;
+}
+.like_bd ul li:nth-child(-n+5)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 1px;
+    height: 60px;
+    background-color: #ddd;
+}
+.like_bd ul li img {
+    padding: 20px 24px;
+}
+.like_bd ul li p {
+    /* padding: 0 20px; */
+    width: 199px;
+    font-size: 13px;
+    padding-left: 30px;
+    /* text-align: center; */
+}
+.like_bd ul li h2 {
+    color: #c81623;
+    padding-left: 30px;
 }
