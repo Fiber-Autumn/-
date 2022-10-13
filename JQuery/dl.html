@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/wwb.css">
+    <link rel="stylesheet" href="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="./jquery-mobile-theme-075607-0/themes/Fiber.min.css">
+    <link rel="stylesheet" href="./jquery-mobile-theme-075607-0/themes/jquery.mobile.icons.min.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./jquery.mobile-1.4.5/jquery.js"></script>
+    <script src="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <div data-role="page" id="pagethree" style="font-family: '楷体';">
+        <!-- 顶栏 -->
+        <div data-role="header" data-fullscreen="true">
+            <!-- 首页 -->
+            <a href="./index.html" rel="external" data-role="button" data-rel="popup" data-inline="true" data-mini="true">首页</a>
+
+            <!-- 标题 -->
+            <h2>欢迎登录</h2>
+        </div>
+
+        <!-- 内容 -->
+        <div data-role="content">
+            <div class="login">
+                <h1>登录你的账户</h1>
+                <div class="text">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <input type="text" placeholder="Username" id="name">
+                </div>
+                <div class="text">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password" id="pass">
+                </div>
+                <button onclick="login()">登录<tton></tton></button>
+            </div>
+        </div>
+
+        <!-- 底栏 -->
+        <div data-position="fixed" data-role="footer">
+            <div data-role="navbar" >
+                <ul>
+                    <li><a href="./index.html" data-role="button" data-icon="back" data-iconpos="top" rel="external">返回</a></li>
+                    <li><a href="./dl.html" data-role="button" data-icon="refresh" data-iconpos="top" rel="external">刷新</a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/wwb.js"></script>

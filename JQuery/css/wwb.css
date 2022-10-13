@@ -1,0 +1,197 @@
+/* 轮播图 */
+ul {
+    list-style: none;
+}
+#wrap {
+    margin: 0;
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 85%;
+    height: 100%;
+    margin: 2px auto 0;
+}
+#wrap .img-list {
+    display: flex;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    transition: 0.5s ease;
+}
+#wrap .img-list img {
+    width: 100%;
+    cursor: pointer;
+}
+/* #wrap a {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    user-select: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+} */
+
+#wrap a.left {
+    left: 0;
+}
+#wrap a.right {
+    right: 0;
+}
+.circle-list {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 200px;
+    height: 5px;
+    z-index: 8;
+}
+.circle-list > .circle {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+}
+.circle-list > .circle.active {
+    background-color: #00ffff;
+}
+
+/* 按钮 */
+#controlgroupid	.ui-controlgroup-controls{
+    width:100%;
+} 
+#controlgroupid a{
+    width:33%;box-sizing: border-box;
+}
+
+/* 文本 */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.bt {
+	width: 100%; 
+	height: 45px;
+	display:block;
+	line-height:45px;
+	text-align:center;
+	text-decoration: none;
+	color: aqua;
+	background-image:linear-gradient(-90deg,#29bdd9 0%,#276ace 100%);
+}
+
+#one {
+	font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#box {
+	width: 90%;
+	height: 40px;
+	background: blue;
+	border: 5px;
+}
+#xia {
+	width: 90%;
+	height: 90%; 
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: auto;
+}
+#xia h4 {
+	width:90%; 
+	height:50px;  
+	text-align: center; 
+	line-height:50px; 
+	color:#00ffff
+}
+#two {
+	width: 100%;
+}
+#yi {
+	margin-left: 5%;
+	margin-right: 5%;
+	content: 80%;
+}
+#zuo {
+	width:90%;
+	padding: 10px;;
+}
+#you {
+	width:90%;
+	padding: 5px; 
+	margin-right:30px;
+}
+#yi h4 { 
+	width: 100%; 
+	height:30px; 
+	background-image:linear-gradient(-90deg,#29bdd9 0%,#276ace 100%);
+	text-align:center; 
+	line-height:30px;  
+	margin-bottom: 5px;
+}
+#yi p { 
+    font-size: 10px;
+	line-height:15px; 
+	text-indent:2em;
+    padding-bottom: 0px;
+}
+
+/* 火箭上升式返回顶部 */
+.fly {
+    position: fixed;
+    right: 30px;
+    bottom: 80px;
+    width: 25px;
+    height: 25px;
+}

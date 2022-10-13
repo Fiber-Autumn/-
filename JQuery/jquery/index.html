@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/echarts.js"></script>
+</head>
+<body>
+    <div id="data" style="height: 500px;"></div>
+</body>
+</html>
+<script>
+    var dataPic = echarts.init(document.getElementById('data'));
+    dataPic.setOption({
+        title:{test:"气温变化图"},
+        color:'red',
+        legend:{data:['年度播放']['最低温度']},
+        tooltip:{
+            trigger:'axis',
+            axisPointer:{
+                type:'cross',
+                label:{
+                    backgroundColor:'green',
+                }
+            }
+        },
+        xAxis: {data:[], name:'时'},
+        yAxis: [{
+            type:'value',
+            min:0,
+            max:30,
+            name:'温度',
+            axisLabel: {
+                formatter:'{value}°C'
+            }
+        }],
+        series:[{
+            name:'最高温度',
+            type:'line',
+            Symbol:'circle',
+            symbolSize:10,
+            data:[],
+        },
+        {
+            name:'最低温度',
+            type:'line',
+            Symbol:'blue',
+            symbolSize:10,
+            data:[],
+        }],
+    });
+    $.get('./data/data.json',function(data){
+        console.log(data.hour);
+        dataPic.setOption({
+            xAxis:{data:data.hour},
+            series:[{data:data.g},{data:data.w}]
+        });
+    });
+    window.onresize = dataPic.resize;
+
+</script>
