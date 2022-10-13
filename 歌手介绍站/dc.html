@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/yjq_dc.css"/>
+	</head>
+	<body>
+		<div>
+		    <h2>音乐个性问卷调查</h2><br/>
+			<hr/><br/>
+			<form method="get" action="index.html" onSubmit="return check()">
+				<ol>
+		            <li>您经常在哪个时段听音乐是？</li>
+					<label> <input type="radio" name="1"  required>上班时 </label>
+					<label> <input type="radio" name="1"  required>睡觉时</label>
+					<label> <input type="radio" name="1"  required>吃饭时 </label>
+					<label> <input type="radio" name="1"  required>上课时 </label>
+					<label> <input type="radio" name="1"  required>以上都有 </label>
+		            	 
+					<li>您的年龄段是？</li>
+					<label> <input type="radio" name="2"  required>18岁以下 </label>
+					<label> <input type="radio" name="2"  required>18-25岁 </label>
+					<label> <input type="radio" name="2"  required>26-30岁 </label>
+					<label> <input type="radio" name="2"  required>31-35岁 </label>
+					<label> <input type="radio" name="2"  required>35岁以上 </label>
+					
+					<li>您常听那种类型的音乐？（可多选）</li>	
+					<label> <input type="checkbox"  name="q3">流行</label>
+					<label> <input type="checkbox"  name="q3">轻音乐 </label>
+					<label> <input type="checkbox"  name="q3">说唱 </label>
+					<label> <input type="checkbox"  name="q3">国风</label>
+					<label> <input type="checkbox"  name="q3">摇滚</label>
+					
+					<li>您比较喜欢以下哪个歌手？（可多选）</li>
+					<label> <input type="checkbox"  name="q4">邓紫棋</label><br/>
+					<label> <input type="checkbox"  name="q4">薛之谦 </label><br/>
+					<label> <input type="checkbox"  name="q4">林俊杰</label><br/>
+					<label> <input type="checkbox"  name="q4">周杰伦</label><br/>
+					<label> <input type="checkbox"  name="q4">以上均不感兴趣</label><br/>
+				</ol>
+										
+				<label>您的职业<input type="text" name="position"  required></label>
+				<label>联系方式（QQ）<input type="tel" name="tel"  required></label>
+				<button type="submit">提交问卷</button>
+			</form>
+		</div>
+	</body>
+</html>
+<script src="js/yjq.js" type="text/javascript" charset="utf-8"></script>

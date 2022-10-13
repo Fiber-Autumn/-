@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>小游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/wwb.css"/>
+	<link rel="stylesheet" type="text/css" href="css/wwb_cj.css"/>
+</head>
+<body onload="start();"  style="background-repeat: no-repeat;background-size: 100% 100%; background-attachment: fixed;">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> 
+			<div id="time"></div>
+		</a>
+		<div id="time"></div>
+		<a href="./zjl.html">周杰伦</a>
+		<a href="#">林俊杰</a>
+		<a href="#">薛之谦</a>
+		<a href="#">王力宏</a>
+		<a href="#">韩红</a>
+		<a href="#">邓紫棋</a>
+		<a href="#">李玉刚</a>
+		<a href="#">汪苏泷</a>
+		<a href="#">许嵩</a>
+		<a href="#">汪峰</a>
+	</div>
+		
+	<div id="main">
+		<span style="font-size:30px;cursor:pointer;color: #00FFFF;" onclick="openNav()">&#9776;
+			<a>导航</a>
+			<a class="bt" href="index.html">小游戏</a>
+		</span>
+
+		<div id="fruits">
+			<div id="around">							
+				<div id="banana">香蕉*10</div>
+				<div id="apple">苹果*5</div>
+				<div id="orange">橘子*5</div>
+				<div id="cherry">樱桃*20</div>
+				<div id="apple1">苹果*5</div>
+				
+				<div id="banana1">香蕉*10</div>
+				<div id="orange2">橘子*5</div>
+				<div id="mangosteen">山竹*50</div>
+				
+				<div id="apple2">苹果*5</div>
+				<div id="banana2">香蕉*10</div>
+				<div id="orange3">橘子*5</div>
+				<div id="cherry1">樱桃*20</div>
+				<div id="apple3">苹果*5</div>
+				
+				<div id="banana3">香蕉*10</div>
+				<div id="orange4">橘子*5</div>
+				<div id="durian">榴莲*100</div>
+			</div>
+				
+			<div id="center">
+				<ul>
+					<li id="special">播种</li>
+					<li>苹 果<input type="button" value="-" title="减一" /><input type="text" value="0" readonly="true" /><input type="button" value="+" title="加一" /></li>
+					<li>橘 子<input type="button" value="-" title="减一" /><input type="text" value="0" readonly="true" /><input type="button" value="+" title="加一" /></li>
+					<li>香 蕉<input type="button" value="-" title="减一" /><input type="text" value="0" readonly="true" /><input type="button" value="+" title="加一" /></li>
+					<li>樱 桃<input type="button" value="-" title="减一" /><input type="text" value="0" readonly="true" /><input type="button" value="+" title="加一" /></li>
+					<li>山 竹<input type="button" value="-" title="减一" /><input type="text" value="0" readonly="true" /><input type="button" value="+" title="加一" /></li>
+					<li>榴 莲<input type="button" value="-" title="减一" /><input type="text" value="0" readonly="true" /><input type="button" value="+" title="加一" /></li>
+				</ul>
+									
+				<input id="apply" type="button" value="施肥" >
+				<input id="gain" type="button" value="收获" >
+				<p>
+					您拥有的种子数：<span id="have">100</span><br/>
+					您收获的种子数：<span id="gain1">0</span>
+				</p>
+			</div>
+		</div>
+		
+		<h3 style="text-align: center;">计算器</h3>
+		<form style="text-align: center;">
+			<input type="text" size="5" id="num1" value=""/>
+			<select id="operator">
+				<option value="+" selected="selected">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<input type="text" size="5" id="num2" value=""/>
+			<input type="button" value="=" id="ok" />
+			<input type="text" size="16" id="result" readonly="true"/>
+		</form>
+	</div>
+</body>
+</html>	
+<script src="js/wwb.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/yjq.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/wwb_cj.js" type="text/javascript" charset="utf-8"></script>

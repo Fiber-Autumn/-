@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>音乐介绍站：注册</title>
+		<link rel="stylesheet" type="text/css" href="css/wwb_zc.css"/>
+    </head>
+    <body id="zcbd">
+		<div id="loginDiv">
+        <form>
+            <h1><a href="zc.html" style="text-decoration: none;color:#00ffff">音乐介绍站</a></h1>
+            <p>&nbsp;&nbsp;用户名:<input id="userNname" name="userName" type="text" autofocus required><label id="name_trip"></label>
+            </p>
+
+            <p>用户密码:<input id="password" type="password" required><label id="password_trip"></label></p>
+
+            <p>确认密码:<input id="surePassword" type="password" required><label id="surePassword_trip"></label></p>
+
+            <p>
+                电子邮箱:
+                <input id="email" type="email" required>
+                <label id="emil_trip"></label>
+            </p>
+            <p style="text-align: center;">
+				<a type="button" class="button" href="index.html" style="text-decoration: none;">返回</a>
+				<a type="button" class="button" onclick="submitT()" value="提交">提交</a>
+				<a type="button" class="button" onclick="myFunctionReset()" value="重置">重置</a>
+            </p>
+        </form>
+    </div>
+    </body>
+</html>
+<script src="js/wwb.js" type="text/javascript" charset="utf-8"></script>
