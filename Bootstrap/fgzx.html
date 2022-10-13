@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>反馈中心</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+    <script src="./dist/js/jquery-3.6.0.js"></script>
+    <script src="./dist/js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">歌手介绍站</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"><li><a href="./index.html">首页</a></li></ul>
+                <ul class="nav navbar-nav navbar-right"><li><a href="./index.html">登录</a></li></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- 下拉菜单 -->
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">歌手<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">日本</li>
+                            <li><a href="./bjqs.html">坂井泉水</a></li>
+                            <li><a href="./cmmy.html">仓木麻衣</a></li>
+                            <li><a href="#">米津玄师</a></li>
+                            <li><a href="./zsmc.html">中森明菜</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">美国</li>
+                            <li><a href="./tlswft.html">泰勒·斯威夫特</a></li>
+                            <li><a href="./ydtg.html">宇多田光</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">英国</li>
+                            <li><a href="#">艾兰·沃克</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">加拿大</li>
+                            <li><a href="./jsdbb.html">贾斯汀·比伯</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br /><br /><br />
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="page-header">
+                        <h1>反馈中心</h1>
+                    </div>
+                    <h4>性别</h4>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">男
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">女
+                    </label>
+                    <hr>
+                    <h4>年龄</h4>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">18岁以下
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">18~30岁
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">31~45岁
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">46~60岁
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">61岁及以上
+                    </label>
+                    <hr>
+                    <h4>您认为本站的整体风格更符合以下哪种</h4>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">亲和大众
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">简约大气
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">沉稳内敛
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">前卫大胆
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">创意独特
+                    </label>
+                    <hr>
+                    
+                    <h4>请写下您对本站的其他意见或建议，如有的话</h4>
+                    <textarea class="form-control" rows="3"></textarea>
+                    <hr>
+                    <h4>联系方式</h4>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+                        <input type="text" class="form-control" placeholder="电子邮箱" aria-describedby="basic-addon1">
+                    </div><br />
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></span>
+                        <input type="text" class="form-control" placeholder="电话号码" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-2 col-sm-2 col-md-1 col-xs-offset-10 col-sm-offset-10 col-md-offset-11">
+                <!-- 模态框 -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">提交</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick='location.href=("index.html")'><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">歌手介绍站</h4>
+                            </div>
+                            <div class="modal-body">感谢您对本站提出的意见！</div>
+                            <div class="modal-footer"><button type="button" class="btn btn-primary"><a href="./index.html" style="color: aliceblue;">确定</a></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
