@@ -1,48 +1,3 @@
-//菜单
-//弹出
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-//回收
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
-
-// 返回顶部
-window.addEventListener("scroll",handle)
-function handle(){
-	//要获取当前的滚动条纵坐标位置，documentElement对应的是html标签
-	//body对应的是body标签
-	var oTop = document.body.scrollTop||document.documentElement.scrollTop
-	if(oTop>=200){
-		gotop.style.display = "block";
-	}else{
-		gotop.style.display = "none";
-	}
-	gotop.onclick = function(){
-		window.scrollTo({
-			top:0,
-			behavior:"smooth"
-		})
-	}
-}
-
-// 鼠标经过切换图片
-window.onload = function () {
-	//获取图片
-	var img = document.getElementById("two1");
-	//鼠标经过图片
-	img.onmouseover = function () {
-		this.src = "./img/zjl3.jpg"
-	}
-	//鼠标离开图片
-	img.onmouseout = function () {
-		this.src = "./img/zjl2.jpg";
-	}
-}
-
 // 注册
 function trip(obj, trip) {
     document.getElementById(obj).innerHTML = "<b>" + trip + "</b>";
@@ -103,11 +58,11 @@ function submitT() {
 }
 
 //重置事件
-function myFunctionReset(){
-    console.log("已重置");
-    trip("name_trip", "");
-    trip("password_trip", "");
-    trip("surePassword_trip","");
-    trip("emil_trip", "");
-}
+// function myFunctionReset(){
+//     console.log("已重置");
+//     trip("name_trip", "");
+//     trip("password_trip", "");
+//     trip("surePassword_trip","");
+//     trip("emil_trip", "");
+// }
 

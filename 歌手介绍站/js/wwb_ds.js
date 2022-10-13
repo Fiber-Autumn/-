@@ -4,7 +4,7 @@ window.onload=function(){
 	function show(){
 		var aInput=document.getElementsByTagName("input");
 		var today=new Date();
-		var Endtime=new Date("2022/03/12,00:00:00");
+		var Endtime=new Date("2022/12/15,00:00:00");
 		var now=today.getTime();
 		var end=Endtime.getTime();
 		var t=Endtime.getTime()-today.getTime();
