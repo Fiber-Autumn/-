@@ -27,4 +27,60 @@
         index = str.indexOf('0', index + 1);
     }
     console.log('次数:' + num);
+
+    console.log('根据位置返回字符');
+    var str1 = 'qwer';
+    console.log(str1.charAt(3)); 
+    console.log(str1[3]); // HTML5新增
+    console.log('遍历所有字符');
+    for (var i = 0; i < str1.length; i++) {
+        console.log(str1.charAt(i));
+    }
+    console.log('返回相应索引号的字符ASCII值  判断用户触发的按键');
+    console.log(str1.charCodeAt(2));
+
+    console.log('统计出现次数最多的字符');
+    var str2 = 'qwertyuiopaiuryweorar';
+    var o = {};
+    for (var i = 0; i < str2.length; i++) {
+        var chars = str2.charAt(i);
+        if (o[chars]) {
+            o[chars]++;
+        } else {
+            o[chars] = 1;
+        }
+    }
+    console.log(o);
+    // 遍历对象
+    var max = 0;
+    var char = '';
+    for (var k in o) {
+        if (o[k] > max) {
+            max = o[k];
+            char = k;
+        }
+    }
+    console.log('字符:' + char, '次数:' + max);
+
+    console.log('截取字符串');
+    var str3 = 'asdfghjkl';
+    console.log(str3.slice(0, 4)); // slice(start, end) 从start位置开始，截取到end位置  end取不到:a~g取asdf
+    console.log(str3.substring(4, 8)); // substring(start, end)同上，但是不接受负值
+
+    console.log('字符替换');
+    console.log(str2.replace('q', 'j')); // 替换第一个符合条件的字符
+    var str4 = 'qwertyuiopaiuryweorar';
+    while (str4.indexOf('r') !== -1) {
+        str4 = str4.replace('r', 'g');
+    }
+    console.log(str4);
+
+    console.log('字符串转数组');
+    var str5 = 'qwe|rty|uio';
+    console.log(str5.split('|')); // split('分隔符');
+
+    console.log('转换大小写');
+    var str6 = 'qW';
+    console.log(str6.toUpperCase('q'));
+    console.log(str6.toLowerCase('W'));
 </script>
