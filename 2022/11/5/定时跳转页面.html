@@ -8,7 +8,7 @@
 </head>
 <body>
     <button>点击前往Gitee</button>
-    <div></div>
+    <div>您将在10秒钟之后跳转到GitHub</div>
 </body>
 </html>
 <script>
@@ -17,8 +17,8 @@
     btn.addEventListener('click', function() {
         location.href = 'https://gitee.com/Fiber-Autumn/review.github.io';
     })
-    var timer = 10;
-    setInterval(function() {
+    var timer = 9;
+    var tp = setInterval(function() {
         if (timer == 0) {
             location.href = 'https://github.com/Fiber-Autumn/review.github.io';
         } else {

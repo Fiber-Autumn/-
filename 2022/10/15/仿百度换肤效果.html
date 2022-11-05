@@ -13,7 +13,7 @@
         }
 
         body {
-            background: url(images/1.jpg) no-repeat center top;
+            background: url(../images/1.jpg) no-repeat center top;
             -webkit-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
@@ -46,10 +46,10 @@
 
 <body>
     <ul class="baidu">
-        <li><img src="images/1.jpg" onclick="cut('1')"></li>
-        <li><img src="images/2.jpg" onclick="cut('2')"></li>
-        <li><img src="images/3.jpg" onclick="cut('3')"></li>
-        <li><img src="images/4.jpg" onclick="cut('4')"></li>
+        <li><img src="../images/1.jpg" onclick="cut('1')"></li>
+        <li><img src="../images/2.jpg" onclick="cut('2')"></li>
+        <li><img src="../images/3.jpg" onclick="cut('3')"></li>
+        <li><img src="../images/4.jpg" onclick="cut('4')"></li>
     </ul>
 </body>
 
@@ -64,6 +64,6 @@
     function cut(x) {
         // console.log(this);
         // var img = 
-        document.body.style.backgroundImage = 'url(images/' + x + ".jpg)";
+        document.body.style.backgroundImage = 'url(../images/' + x + ".jpg)";
     }
 </script>

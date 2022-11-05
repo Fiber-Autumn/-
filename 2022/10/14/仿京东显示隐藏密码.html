@@ -29,7 +29,7 @@
 <body>
     <div class="box">
         <label for="">
-            <img src="./images/close.png" alt="" id="eye">
+            <img src="../images/close.png" alt="" id="eye">
         </label>
         <input type="password" id="pwd">
     </div>
@@ -41,11 +41,11 @@
     var flag = 0;
     eye.onclick = function() {
         if (flag == 0) {
-            eye.src = './images/open.png';
+            eye.src = '../images/open.png';
             pwd.type = 'text';
             flag = 1;
         } else {
-            eye.src = './images/close.png';
+            eye.src = '../images/close.png';
             pwd.type = 'password';
             flag = 0;
         }
