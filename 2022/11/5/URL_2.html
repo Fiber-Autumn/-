@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<script>
+    console.log(location.search);
+    var params = location.search.substr(1); // substr('其始位置'， 截取字符数) substr(1):从第二个字符开始截取
+    console.log(params); // uname=???
+    var arr = params.split('='); // 把字符分割成数组，分隔符为'='
+    console.log(arr);
+    var div = document.querySelector('div');
+    div.innerHTML = arr[1] + '欢迎您！';
+</script>

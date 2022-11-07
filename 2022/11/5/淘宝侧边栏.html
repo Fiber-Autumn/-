@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-bar {
+            position: absolute;
+            left: 50%;
+            top: 340px;
+            margin-left: 600px;
+            width: 45px;
+            height: 130px;
+            background-color: pink;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 10px auto;
+        }
+        
+        .header {
+            height: 150px;
+            background-color: purple;
+        }
+        
+        .banner {
+            height: 250px;
+            background-color: skyblue;
+        }
+        
+        .main {
+            height: 2000px;
+            background-color: yellowgreen;
+        }
+
+        .footer {
+            height: 300px;
+            background-color: skyblue;
+        }
+        
+        span {
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-bar">
+        <span class="goBack">返回顶部</span>
+    </div>
+    <div class="header w">头部区域</div>
+    <div class="banner w">banner区域</div>
+    <div class="main w">主体部分</div>
+    <div class="footer w">页面底部</div>
+</body>
+</html>ke
+<script>
+    var pageHeight = innerHeight; // 获取页面可用高度
+    var sliderbar = document.querySelector('.slider-bar'); // 侧边栏
+    var banner = document.querySelector('.banner');
+    var goBack = document.querySelector('.goBack');
+    var bannerTop = banner.offsetTop; // banner.offestTop 就是被卷去头部的大小(banner距网页顶部的距离) 一定要写到滚动事件的外面
+    document.addEventListener('scroll', function() {
+        if (window.pageYOffset >= bannerTop) { // 页面滚动（或者说：页面向下滑动、页面内容向上移动）的距离 >= banner距网页顶部的距离时
+            sliderbar.style.position = 'fixed'; // 侧边栏：绝对定位改成固定定位
+            sliderbar.style.top = bannerTop + 'px'; // 同时侧边栏距距网页顶部的距离 = banner距网页顶部的距离
+        } else {
+            sliderbar.style.position = 'absolute'; // 侧边栏：固定定位改成绝对定位
+            sliderbar.style.top = bannerTop * 2 + 'px'; // 同时侧边栏距距网页顶部的距离 = banner距网页顶部的距离*2
+        }
+        if (window.pageYOffset >= pageHeight) { // 页面滚动的距离 >= 页面可用高度
+            goBack.style.display = 'block'; // 显示返回顶部
+        } else {
+            goBack.style.display = 'none'; // 隐藏返回顶部
+        }
+
+    })
+</script>
