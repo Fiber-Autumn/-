@@ -79,4 +79,24 @@
         }
 
     })
+    // 2022.11.7
+    goBack/addEventListener('click', function() {
+        animate(window, 0);
+    })
+    // animate 缓动动画(改)
+    function animate(obj, target, callback) { // obj:移动的对象 target：移动的值 callback：回调函数
+        clearInterval(obj.timer); // 清除之前的定时器，只保留当前的一个定时器执行
+        obj.timer = setInterval(function() {
+            var step = (target - window.pageYOffset) / 10; // step:步长值（图片移动一次的值）;写到定时器的里面 使步长值改为一个慢慢变小的值  步长公式：(目标值 - 现在的位置) / 10
+            step = step > 0 ? Math.ceil(step) : Math.floor(step); // 取整
+            if (window.pageYOffset == target) {
+                clearInterval(obj.timer); // 停止动画 本质是停止定时器
+                callback && callback(); // 回调函数 判断是否有callback（函数）传入 有则执行该函数
+                // if (callback) {
+                //     callback();
+                // }
+            }
+            window.scroll(0, window.pageYOffset + step);
+        }, 10);
+    }
 </script>
