@@ -227,7 +227,7 @@
 
 /* Like 猜你喜欢 */
 .like_hd {
-    margin-top: 20px;
+    margin-top: 10px;
     height: 30px;
 }
 .like_hd p {
@@ -235,7 +235,7 @@
     /* height: 18px; */
     font-size: 18px;
     line-height: 30px;
-    font-weight: 550;
+    font-weight: 500;
 }
 .like_hd a {
     position: relative;
@@ -286,4 +286,71 @@
 .like_bd ul li h2 {
     color: #c81623;
     padding-left: 30px;
+}
+
+/* Floor 楼层区 */
+/* jd 家用电器 */
+.jd_hd {
+    margin-top: 10px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.jd_hd p {
+    font-size: 18px;
+    color: #c81623;
+    height: 28px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.tab_list {
+    line-height: 30px;
+}
+.tab_list ul li {
+    float: left;
+}
+.tab_list ul li a {
+    margin: 0 15px;
+}
+.jd_bd .tab_content {
+    height: 360px;
+}
+.tab_list_item > div {
+    float: left;
+}
+.col_210 {
+    width: 210px;
+    height: 360px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+}
+.col_210 a img {
+    margin-top: 15px;
+}
+.col_329 {
+    width: 329px;
+}
+.col_220 {
+    width: 220px;
+}
+.br {
+    border-right: 1px solid #ccc;
+}
+.bb {
+    /*一般情况下，a如果包含有宽度的盒子，a需要转为块级元素*/
+    display: block;
+    border-bottom: 1px solid #ccc;
 }
